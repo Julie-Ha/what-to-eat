@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What to eat?</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>What to eat?</h1>
+    </header>
+
+    <div class="random-dish"></div>
+    <button class="reroll-btn"><i class="fas fa-sync-alt"></i></button>
+
+    <form>
+      <input type="text" class="dish-input" />
+      <button class="dish-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+    </form>
+    <div class="dish-container">
+      <ul class="dish-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
