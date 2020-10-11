@@ -10,22 +10,43 @@
       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
       crossorigin="anonymous"
     />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <header>
-      <h1>What to eat?</h1>
-    </header>
+  <body class="flex flex-col justify-center items-center mt-5 m-auto max-w-lg">
+    <h1 class="text-5xl text-gray-400">What to eat?</h1>
 
-    <div class="random-dish"></div>
-    <button class="reroll-btn"><i class="fas fa-sync-alt"></i></button>
+    <div class="random-dish text-4xl text-orange-500"></div>
+
+    <button class="reroll-btn m-4 focus:outline-none">
+      <svg
+        class="w-10 h-10 text-orange-500"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+        ></path>
+      </svg>
+    </button>
 
     <form>
-      <input type="text" class="dish-input" />
-      <button class="dish-button" type="submit">
-        <i class="fas fa-plus-square"></i>
-      </button>
+      <input
+        class="dish-input bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-500"
+        type="text"
+        placeholder="Ajouter un plat"
+      />
+      <button class="dish-button" type="submit"></button>
     </form>
+
     <div class="dish-container">
       <ul class="dish-list"></ul>
     </div>
